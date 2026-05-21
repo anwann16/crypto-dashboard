@@ -319,20 +319,7 @@ export default function Dashboard({ walletAddress }: DashboardProps) {
         </div>
       </div>
 
-      {/* Wallet Status Banner */}
-      {!walletAddress && (
-        <div className="card p-4 border-[#7928ca]/30 bg-gradient-to-r from-[#7928ca]/10 to-[#ff0080]/10">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm font-medium">Connect your wallet</p>
-              <p className="text-xs text-[#8b8b9e]">View your actual token balances and transaction history</p>
-            </div>
-            <button className="wallet-btn">
-              Connect Wallet
-            </button>
-          </div>
-        </div>
-      )}
+
     </div>
   );
 }

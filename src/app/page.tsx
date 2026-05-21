@@ -4,6 +4,8 @@ import { useState } from "react";
 import dynamic from "next/dynamic";
 import Sidebar from "@/components/Sidebar";
 import WalletPanel from "@/components/WalletPanel";
+import WatchlistPanel from "@/components/WatchlistPanel";
+import AlertsPanel from "@/components/AlertsPanel";
 
 const Dashboard = dynamic(() => import("@/components/Dashboard"), { ssr: false });
 
@@ -21,6 +23,8 @@ export default function Home() {
             {activeTab === "market" && "Market"}
             {activeTab === "wallet" && "Wallet"}
             {activeTab === "transactions" && "Transactions"}
+            {activeTab === "watchlist" && "Watchlist"}
+            {activeTab === "alerts" && "Price Alerts"}
           </h1>
           <WalletPanel
             walletAddress={walletAddress}
@@ -31,6 +35,8 @@ export default function Home() {
         {activeTab === "market" && <Dashboard walletAddress={walletAddress} />}
         {activeTab === "wallet" && <Dashboard walletAddress={walletAddress} />}
         {activeTab === "transactions" && <Dashboard walletAddress={walletAddress} />}
+        {activeTab === "watchlist" && <WatchlistPanel />}
+        {activeTab === "alerts" && <AlertsPanel />}
       </main>
     </div>
   );

@@ -9,9 +9,17 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@walletconnect/web3-provider": "^1.8.0",
+    "@web3modal/ethereum": "^2.7.1",
+    "@web3modal/react": "^2.7.1",
+    "ethers": "^6.16.0",
+    "lucide-react": "^1.16.0",
     "next": "16.2.6",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1",
+    "viem": "^2.50.4",
+    "wagmi": "^3.6.15"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

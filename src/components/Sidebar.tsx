@@ -55,18 +55,7 @@ export default function Sidebar({ activeTab, onTabChange }: SidebarProps) {
         ))}
       </nav>
 
-      {/* Bottom */}
-      <div className="border-t border-[#1e1e2a] pt-4 mt-4">
-        <div className="flex items-center gap-3 px-4">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-xs font-bold">
-            A
-          </div>
-          <div>
-            <p className="text-sm font-medium text-white">Andi</p>
-            <p className="text-[10px] text-[#8b8b9e]">Pro Plan</p>
-          </div>
-        </div>
-      </div>
+
     </aside>
   );
 }
